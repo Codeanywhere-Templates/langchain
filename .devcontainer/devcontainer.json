@@ -1,0 +1,21 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers-community/templates/tree/main/src/jupyter-datascience-notebooks
+{
+    "name": "Langchain AI Dev Container",
+    "image": "python:3.13.2",
+    "features": {
+      "ghcr.io/devcontainers/features/common-utils:2": {}
+    },
+    "postCreateCommand": "pip3 install --upgrade pip && pip3 install --user -r requirements.txt",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "ms-python.python",
+          "ms-python.debugpy",
+          "ms-python.vscode-pylance",
+          "ms-python.isort"
+        ]
+      }
+    }
+  }
+  
